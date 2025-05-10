@@ -1,0 +1,23 @@
+@import url(main.css);
+
+.lBanner, .rBanner { 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.lBanner {
+    font-size: 2.2rem;
+    padding-left: 3rem;
+    color: var(--primary);  
+}
+.lBanner span{
+    color: red;
+}
+
+.rBanner img{
+    border-radius: 50%;
+    background-color: var(--primary);
+}
