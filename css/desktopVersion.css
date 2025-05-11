@@ -1,15 +1,31 @@
 @import url(main.css);
 
-#lBanner, #rBanner { 
+#topBanner { height: 100dvh; justify-content: center; }
+
+#lTopBanner, #rTopBanner { 
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
 }
 
-#lBanner {
+#lTopBanner {
+    gap: 3rem;
     font-size: 2.2rem;
     padding-left: 3rem;
     text-indent: 2.5rem;
+    flex-direction: column;
+} 
+
+#rTopBanner { gap: 3rem }
+
+#rTopBanner img {width: 75%;}
+
+#topSocialLinks a:hover{
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-bottom: .5px solid var(--primary);
 }
