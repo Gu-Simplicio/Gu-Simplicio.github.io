@@ -1,1 +1,13 @@
 @import url(main.css);
+
+#banner {
+    padding-top: 1rem;
+    justify-content: start;
+    flex-direction: column-reverse;
+}
+
+#lBanner {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0 1rem;
+}

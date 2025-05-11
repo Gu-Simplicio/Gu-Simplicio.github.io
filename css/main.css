@@ -10,15 +10,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    min-height: 100vh;
-}
+body {min-height: 100vh;}
 
-.banner{
+#banner{
     width: 100dvw;
     display: flex;
-    height: 100dvh;
+    padding: 2.5rem 0;
+    max-height: 100dvh;
     align-items: center;
     background-color: var(--secondary);
     justify-content: space-between;
+}
+
+#lBanner {color: var(--primary);}
+
+#rBanner img{
+    margin: 0 auto;
+    padding: .25rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
 }
