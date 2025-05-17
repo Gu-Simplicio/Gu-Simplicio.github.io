@@ -1,22 +1,24 @@
 @import url(main.css);
 
-#topBanner {
-    gap: 2rem;
-    padding-top: 1rem;
-    justify-content: start;
-    flex-direction: column;
-}
+@media (max-width: 768px) {
+    #topBanner {
+        gap: 2rem;
+        padding-top: 1rem;
+        justify-content: start;
+        flex-direction: column;
+    }
 
-#lTopBanner {
-    gap: 1rem;
-    display: flex;
-    padding: 0 1rem;
-    font-size: 1.25rem;
-    text-align: center;
-    flex-direction: column;
-}
+    #lTopBanner {
+        gap: 1rem;
+        display: flex;
+        padding: 0 1rem;
+        font-size: 1.25rem;
+        text-align: center;
+        flex-direction: column;
+    }
 
-#rTopBanner {
-    display: flex; 
-    flex-direction: column;
-}
+    #rTopBanner {
+        display: flex; 
+        flex-direction: column;
+    }
+}  

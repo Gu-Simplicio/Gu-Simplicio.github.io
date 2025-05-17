@@ -1,6 +1,10 @@
 @import url(main.css);
 
-#topBanner { height: 100dvh; justify-content: center; }
+#topBanner { 
+    height: 100dvh; 
+    flex-direction: row; 
+    justify-content: center; 
+}
 
 #lTopBanner, #rTopBanner { 
     width: 50%;
