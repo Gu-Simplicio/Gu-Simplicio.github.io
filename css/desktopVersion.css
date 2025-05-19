@@ -33,3 +33,23 @@
     background-color: var(--secondary);
     border-bottom: .5px solid var(--primary);
 }
+
+
+.pageLink::before {
+    width: 0;
+    height: 1px;
+    content: '';
+    bottom: 1rem;
+    position: absolute;
+    transition: .25s ease-in-out;
+    background-color: var(--primary);
+}
+
+.pageLink:hover {
+    color: var(--primary);
+    background-color: var(--quaternary);
+}
+
+.pageLink:hover.pageLink::before{
+    width: 85%;   
+}
