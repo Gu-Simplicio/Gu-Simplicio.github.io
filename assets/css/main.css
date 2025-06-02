@@ -3,6 +3,7 @@
     --gray: #acacac;
     --black: #0e0e0e;
     --white: #fefefe;
+    --blue: #4848f8;
     --green: #1de71d;
     --purple: #ac18ac;
 }
@@ -10,5 +11,150 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    max-width: 100dvw;
+    min-height: 100dvh;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: grid;
+    padding: 1rem 0;
+    position: sticky;
+    place-items: center;
+    background-color: var(--white);
+
+    && #headerList {
+        gap: 2rem;
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+
+        && li > a {
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: relative;
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        && li > a::after {
+            width: 0;
+            left: 50%;
+            height: 3px;
+            content: '';
+            display: block;
+            position: absolute;
+            transform: translateX(-50%);
+            transition: .25s ease-in-out;
+            background-color: var(--blue);
+        }
+
+        && li > a:hover::after{ width: 105%; }
+    }
+}
+
+main {
+    width: 100%;
+    display: block;
+
+    && article { 
+        width: 100%;
+        padding: 5rem 0;
+        color: var(--white); 
+        background-color: var(--black); }
+}
+
+.titulo {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.texto {
+    padding: 0 5rem;
+    font-size: 1.75rem;
+    text-indent: 1.5rem;
+}
+
+#inicio {
+    gap: 2rem;
+    padding: 0;
+    display: flex;
+    height: 100dvh;
+    color: var(--purple);
+    align-items: center;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+
+    && #boasVindasSection {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    && #boasVindasSection h1 { font-size: 3rem; }
+    
+    && #boasVindasSection p{ font-size: 1.5rem; font-weight: bold;}
+    && #boasVindasSection div {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        && .linkSocialTop {
+            width: 65%;
+            padding: .5rem;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            color: var(--purple);
+            text-decoration: none;
+            background-color: var(--white);
+        }
+    }
+
+    && #imgSection { 
+        width: 50%; 
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    && #imgSection img {
+        width: 75%;
+    }
+}
+
+#sobre, #projetos {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#contatos{
+    height: 15rem;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+
+    && h1 {
+        padding: 1rem 0;
+    }
+
+    && #contatosList {
+        gap: 1rem;  
+        display: flex;
+        flex-direction: column;
+    }
 }
